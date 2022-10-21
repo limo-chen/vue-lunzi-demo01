@@ -1,15 +1,14 @@
 <template>
- <div>hi</div>
- <Limo />
+ <div>导航栏 |
+  <router-link to="/">Limo</router-link> |
+  <router-link to="/xxx">Limo2</router-link></div>
+  <hr/>
+<router-view />
 </template>
 
 <script>
-import Limo from './components/Limo.vue'
 
 export default {
   name: 'App',
-  components: {
-  Limo
-  }
 }
 </script>
