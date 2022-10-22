@@ -14,8 +14,8 @@ export default {
     const menuVisible = ref(witch <= 500 ? false :true)
     provide('menuVisible',menuVisible)
    router.afterEach(()=>{
-if(witch <= 500){
-  menuVisible.value = false;
+    if(witch <= 500){
+     menuVisible.value = false;
 }
    })
     
